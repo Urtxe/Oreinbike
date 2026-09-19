@@ -1,142 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="eu">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oreinbike | MTB Kultura</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1a6c7a">
+  <meta name="description" content="Oreinbike — MTB kultura, azpiegiturak eta komunitatea Euskal Herrian.">
+  <title>OREINBIKE | MTB kultura</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="https://via.placeholder.com/150x50?text=OREINBIKE" alt="Oreinbike">
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home">MTB KULTURA</a></li>
-                <li><a href="#pump-track">PUMP TRACK</a></li>
-                <li class="dropdown">
-                    <a href="#bike-park">BIKE PARK ▾</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Abilezia zirkuituak</a></li>
-                        <li><a href="#">Salto zirkuituak</a></li>
-                        <li><a href="#">MTB zirkuituak</a></li>
-                        <li><a href="#">MTB ibilbideak</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#komunitatea">BIKER KOMUNITATEA ▾</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">MTB Kluba</a></li>
-                        <li><a href="#">MTB Eskola</a></li>
-                    </ul>
-                </li>
-                <li><a href="#ikastaroak">MTB IKASTAROAK</a></li>
-                <li><a href="#nor-gara">NOR GARA</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="home" class="hero">
-        <div class="hero-overlay">
-            <h1>OREINBIKE</h1>
-            <p class="main-title">MTB Kultura</p>
-            <p class="subtitle">Euskal Herrian egindako bizikletentzako azpiegiturak</p>
-        </div>
-    </section>
-
-    <section class="container section-padding">
-        <h2 class="section-title">LAN ESPARRUAK</h2>
-        <div class="grid-4">
-            <div class="service-card">
-                <div class="icon-circle">01</div>
-                <p>Azpiegituren diseinua eta garapena</p>
-            </div>
-            <div class="service-card">
-                <div class="icon-circle">02</div>
-                <p>Obra zuzendaritza eta exekuzioa</p>
-            </div>
-            <div class="service-card">
-                <div class="icon-circle">03</div>
-                <p>Sortu zure Biker Gunea</p>
-            </div>
-            <div class="service-card">
-                <div class="icon-circle">04</div>
-                <p>Monitore eta kirolarientzako formakuntza</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="container section-padding">
-        <h2 class="section-title">EGINDAKO LANAK</h2>
-        <div class="grid-portfolio">
-            <div class="portfolio-item">
-                <img src="https://via.placeholder.com/400x250" alt="Astigarraga">
-                <div class="label">Astigarraga - Pump Track</div>
-            </div>
-            <div class="portfolio-item">
-                <img src="https://via.placeholder.com/400x250" alt="Labenne">
-                <div class="label">Labenne - Pump Track</div>
-            </div>
-            <div class="portfolio-item">
-                <img src="https://via.placeholder.com/400x250" alt="Lekunberri">
-                <div class="label">Lekunberri - Bike Park</div>
-            </div>
-            <div class="portfolio-item">
-                <img src="https://via.placeholder.com/400x250" alt="Rivera">
-                <div class="label">Rivera de Abajo - Pump Track</div>
-            </div>
-        </div>
-    </section>
-
-    <section id="ikastaroak" class="container section-padding bg-light">
-        <h2 class="section-title">MTB IKASTAROAK</h2>
-        <div class="grid-3">
-            <div class="course-card">
-                <img src="https://via.placeholder.com/350x200" alt="Curso">
-                <div class="course-info">
-                    <h3>EREMUA: MTB Teknika Ikastaroa</h3>
-                    <p>2026ko Apirilak 17</p>
-                    <span class="price">50€</span>
-                </div>
-            </div>
-            <div class="course-card">
-                <img src="https://via.placeholder.com/350x200" alt="Curso">
-                <div class="course-info">
-                    <h3>OTXE UDALEKUAK: MTB Bike Eskola</h3>
-                    <p>2026ko Ekaina - Uztaila</p>
-                    <span class="price">Consultatu</span>
-                </div>
-            </div>
-            <div class="course-card">
-                <img src="https://via.placeholder.com/350x200" alt="Curso">
-                <div class="course-info">
-                    <h3>EREMUA: Curso Técnica MTB II</h3>
-                    <p>2026ko Martxoak 20</p>
-                    <span class="price">40€</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="nor-gara" class="container section-padding">
-        <div class="about-flex">
-            <div class="about-text">
-                <h2 class="section-title left">NOR GARA</h2>
-                <p><strong>Hegoi Ado</strong> naiz eta hogei urte baino gehiago daramatzat Bike Park eta Pump Track instalakuntzak eraikitzen eta MTB formakuntza eskaintzen.</p>
-                <p>Bikerra naiz bokazioz, eta Euskal Herrian dugun hutsuneari erantzunez, instalakuntzen sustatzaile lanetan ari naiz.</p>
-            </div>
-            <div class="about-img">
-                <img src="https://via.placeholder.com/400x500" alt="Hegoi Ado">
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2026 Oreinbike - MTB Kultura | Euskal Herria</p>
-    </footer>
-
+  <a class="skip-link" href="#main">Edukira joan</a>
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Oreinbike, hasierara"><img src="assets/logo-white.png" width="180" height="151" alt="OREINBIKE"></a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-menu"><span>Menua</span><span class="menu-icon" aria-hidden="true"></span></button>
+      <nav class="main-nav" aria-label="Nabigazio nagusia">
+        <ul id="main-menu">
+          <li><a href="#kultura">MTB KULTURA</a></li><li><a href="#ibilbideak">PUMP TRACK</a></li>
+          <li class="has-submenu"><button type="button" aria-expanded="false">BIKE PARK <span aria-hidden="true">⌄</span></button><ul class="submenu"><li><a href="#ibilbideak">ABILEZIA ZIRKUITUAK</a></li><li><a href="#ibilbideak">SALTO ZIRKUITUAK</a></li><li><a href="#ibilbideak">MTB ZIRKUITUAK</a></li><li><a href="#ibilbideak">MTB IBILBIDEAK</a></li></ul></li>
+          <li class="has-submenu"><button type="button" aria-expanded="false">BIKER KOMUNITATEA <span aria-hidden="true">⌄</span></button><ul class="submenu"><li><a href="#komunitatea">MTB KLUBA</a></li><li><a href="#komunitatea">MTB ESKOLA</a></li></ul></li>
+          <li><a href="#ikastaroak">MTB IKASTAROAK</a></li><li><a href="#kontaktua">NOR GARA</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" id="kultura" aria-labelledby="hero-title"><div class="hero-content"><p class="eyebrow">OREINBIKE</p><h1 id="hero-title">MTB kultura</h1><p>Euskal Herrian egindako bizikletentzako azpiegiturak</p><div class="hero-actions"><a class="button button-outline" href="#ibilbideak">Instalazioak</a><a class="button button-light" href="#komunitatea">Komunitatea</a></div></div></section>
+    <section class="section work-areas" aria-labelledby="areas-title"><div class="content"><h2 id="areas-title">LAN ESPARRUAK</h2><div class="areas-grid"><article class="area"><span class="area-icon" aria-hidden="true">⌘</span><h3>1. Azpiegituren diseinua eta garapena</h3></article><article class="area"><span class="area-icon" aria-hidden="true">⚒</span><h3>2. Obra zuzendaritza eta exekuzioa</h3></article><article class="area"><span class="area-icon bike-icon" aria-hidden="true">♧</span><h3>3. Sortu zure Biker Gunea</h3></article><article class="area"><span class="area-icon" aria-hidden="true">▤</span><h3>4. Monitore eta kirolarientzako formakuntza</h3></article></div></div></section>
+    <section class="section routes" id="ibilbideak" aria-labelledby="routes-title"><div class="content"><h2 id="routes-title">Ibilbide motak</h2><div class="feature-grid"><a class="feature-card" href="#lanak"><img src="assets/pump-track.jpg" alt="Pump track bat mendien artean"><span>Pump Track</span></a><a class="feature-card" href="#lanak"><img src="assets/bike-park.jpg" alt="Bike park batean bizikletan dabilen haurra" loading="lazy"><span>Abilezia eta salto zirkuituak</span></a><a class="feature-card" href="#lanak"><img src="assets/mtb-circuit.jpg" alt="Basoan zehar doan MTB zirkuitua" loading="lazy"><span>MTB Zirkuituak</span></a><a class="feature-card" href="#lanak"><img src="assets/mtb-routes.jpg" alt="Mendi artean marraztutako MTB ibilbidea" loading="lazy"><span>MTB Ibilbideak</span></a></div></div></section>
+    <section class="section community" id="komunitatea" aria-labelledby="community-title"><div class="content"><h2 id="community-title">MTB komunitatea</h2><div class="community-grid"><a class="community-card" href="#kontaktua"><img src="assets/community.jpg" alt="Biker talde bat mendi ibilbide batean" loading="lazy"><span>Sortu zure taldea</span></a><a class="community-card" href="#ikastaroak"><img src="assets/courses.jpg" alt="MTB teknikako ikastaroa" loading="lazy"><span>Ikastaroak</span></a></div></div></section>
+    <section class="contact-banner" id="kontaktua" aria-labelledby="contact-title"><div class="content contact-content"><h2 id="contact-title">Hemen topatuko gaituzu!</h2><p>Erakunde eta udalentzat, marka komertzialentzat, enpresentzat, eskolentzat eta MTB federazioentzat egiten dugu lan.</p><a class="button button-outline" href="mailto:info@oreinbike.eus">Jarri gurekin harremanetan</a></div></section>
+    <section class="section projects" id="lanak" aria-labelledby="projects-title"><div class="content"><h2 id="projects-title">EGINDAKO LANAK</h2><div class="project-grid"><button class="project" type="button" data-image="assets/astigarraga.jpg" data-caption="Astigarraga — Pump Track"><img src="assets/astigarraga.jpg" alt="Astigarragako pump tracka" loading="lazy"><span>Astigarraga · Pump Track</span></button><button class="project" type="button" data-image="assets/labenne.jpg" data-caption="Labenne — Pump Track"><img src="assets/labenne.jpg" alt="Labenneko pump tracka" loading="lazy"><span>Labenne · Pump Track</span></button><button class="project" type="button" data-image="assets/lekunberri.jpg" data-caption="Lekunberri — Pump Track"><img src="assets/lekunberri.jpg" alt="Lekunberriko pump tracka" loading="lazy"><span>Lekunberri · Pump Track</span></button><button class="project" type="button" data-image="assets/rivera.jpg" data-caption="Rivera de Abajo — Pump Track"><img src="assets/rivera.jpg" alt="Rivera de Abajoko pump tracka" loading="lazy"><span>Rivera de Abajo · Pump Track</span></button><button class="project" type="button" data-image="assets/saint-lary.jpg" data-caption="Saint Lary — Pump Track"><img src="assets/saint-lary.jpg" alt="Saint Laryko pump tracka" loading="lazy"><span>Saint Lary · Pump Track</span></button><button class="project" type="button" data-image="assets/bareges.jpg" data-caption="Barèges — Bike Park"><img src="assets/bareges.jpg" alt="Barègeseko bike parkaren planoa" loading="lazy"><span>Barèges · Bike Park</span></button></div></div></section>
+    <section class="section courses-section" id="ikastaroak" aria-labelledby="courses-title"><div class="content"><h2 id="courses-title">MTB ikastaroak</h2><div class="course-grid"><article class="course-card"><img src="assets/eremua.jpg" alt="MTB teknikako ikastaro batean parte hartzaileak" loading="lazy"><div><p>14/07/2021</p><h3>EREMUA: MTB Teknika Ikastaroa (2021eko apirilak 17)</h3></div></article><article class="course-card"><img src="assets/otxe.jpg" alt="MTB bike eskolako jarduera" loading="lazy"><div><p>13/07/2021</p><h3>OTXE UDALEKUAK: MTB Bike Eskola (2021eko ekainetik uztailera)</h3></div></article><article class="course-card"><img src="assets/course-technique.jpg" alt="MTB teknikako entrenamendua" loading="lazy"><div><p>13/07/2021</p><h3>EREMUA: Curso Técnica MTB (20 o 27 de marzo del 2021)</h3></div></article></div></div></section>
+    <section class="clients section" aria-labelledby="clients-title"><div class="content"><h2 id="clients-title">Honekin egiten dugu lan</h2><div class="client-grid"><img src="assets/client-9.png" alt="Erakunde laguntzailea" loading="lazy"><img src="assets/client-10.png" alt="Erakunde laguntzailea" loading="lazy"><img src="assets/client-8.png" alt="Erakunde laguntzailea" loading="lazy"><img src="assets/client-3.png" alt="Erakunde laguntzailea" loading="lazy"><img src="assets/client-6.png" alt="Erakunde laguntzailea" loading="lazy"></div></div></section>
+  </main>
+  <footer class="site-footer"><div class="content footer-content"><img src="assets/logo-white.png" width="125" height="105" alt="OREINBIKE"><div><a href="mailto:info@oreinbike.eus">info@oreinbike.eus</a><p>© <span id="year">2026</span> OREINBIKE. MTB kultura.</p></div><a class="to-top" href="#top">Gora ↑</a></div></footer>
+  <a class="whatsapp-button" href="https://wa.me/?text=Kaixo%2C%20OREINBIKErekin%20harremanetan%20jarri%20nahi%20nuke." target="_blank" rel="noopener" aria-label="WhatsApp bidez harremanetan jarri" title="WhatsApp bidez idatzi"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M19.1 17.5c-.3-.2-1.7-.8-1.9-.9-.3-.1-.5-.2-.7.2s-.8.9-.9 1.1c-.2.2-.3.2-.6.1a7.7 7.7 0 0 1-2.3-1.4 8.7 8.7 0 0 1-1.6-2c-.2-.3 0-.4.1-.6l.5-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.1c-.2-.5-.5-.4-.7-.4h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1 2.9 1.1 3.1c.1.2 2.1 3.2 5 4.5.7.3 1.3.5 1.7.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.1-1.4-.1-.1-.3-.2-.6-.3M16 27.5a11.4 11.4 0 0 1-5.5-1.4L4.5 28l1.9-5.8A11.5 11.5 0 1 1 16 27.5m0-21a9.5 9.5 0 0 0-8.1 14.5l.3.5-1.1 3.4 3.5-1.1.5.3A9.5 9.5 0 1 0 16 6.5" fill="currentColor"/></svg></a>
+  <dialog class="lightbox" aria-label="Lanaren irudia"><button class="lightbox-close" type="button" aria-label="Itxi">×</button><figure><img src="" alt=""><figcaption></figcaption></figure></dialog>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,17 @@
+const header = document.querySelector('.site-header');
+const menuButton = document.querySelector('.menu-button');
+const navigation = document.querySelector('.main-nav');
+const submenuButtons = document.querySelectorAll('.has-submenu > button');
+const lightbox = document.querySelector('.lightbox');
+const lightboxImage = lightbox.querySelector('img');
+const lightboxCaption = lightbox.querySelector('figcaption');
+const updateHeader = () => header.classList.toggle('is-scrolled', window.scrollY > 24);
+updateHeader();
+window.addEventListener('scroll', updateHeader, { passive: true });
+menuButton.addEventListener('click', () => { const open = menuButton.getAttribute('aria-expanded') === 'true'; menuButton.setAttribute('aria-expanded', String(!open)); navigation.classList.toggle('is-open', !open); });
+submenuButtons.forEach((button) => button.addEventListener('click', () => { const item = button.parentElement; const open = button.getAttribute('aria-expanded') === 'true'; submenuButtons.forEach((other) => { if (other !== button) { other.setAttribute('aria-expanded', 'false'); other.parentElement.classList.remove('is-open'); } }); button.setAttribute('aria-expanded', String(!open)); item.classList.toggle('is-open', !open); }));
+navigation.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => { menuButton.setAttribute('aria-expanded', 'false'); navigation.classList.remove('is-open'); }));
+document.querySelectorAll('.project').forEach((project) => project.addEventListener('click', () => { lightboxImage.src = project.dataset.image; lightboxImage.alt = project.querySelector('img').alt; lightboxCaption.textContent = project.dataset.caption; lightbox.showModal(); }));
+lightbox.querySelector('.lightbox-close').addEventListener('click', () => lightbox.close());
+lightbox.addEventListener('click', (event) => { if (event.target === lightbox) lightbox.close(); });
+document.querySelector('#year').textContent = new Date().getFullYear();
